@@ -1,0 +1,76 @@
+.main{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    background-color: #9ecfd7;
+    
+    margin: auto;
+    margin-top: 10px;
+  }
+  input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+  }
+  label {
+    width: 30px;
+    height: 30px;
+    display:block;
+    background-color: #01ae0c;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0 0 20px #477a8550;
+  }
+  label::after {
+    content: "";
+    width: 10;
+    height: 20;
+    background-color: #e8f5f7;
+    position: absolute;
+    border-radius: 70px;
+    top: 15px;
+    left: 15px;
+    transition: 0.5s;
+  }
+  
+  input:checked + label:after {
+    left: calc(100% - 10px);
+    transform: translateX(-100%);
+  }
+  
+  input:checked + label {
+    background-color: #00667a;
+  }
+  
+  label:active:after {
+    width: 160px;
+  }
+  .btntog{
+      width:25px;
+      background-color: rgb(0, 120, 0);
+      padding: 5px;
+      margin: 5px;
+      border: 0px;
+      border-radius: 12px;
+      font-weight: bold;
+      color: white;
+  }
+  .bt2{
+    width:25px;
+    background-color: rgb(18, 100, 162);
+    padding: 5px;
+    margin: 5px;
+    border: 0px;
+    border-radius: 12px;
+    font-weight: bold;
+    color: white;
+}
+  .rembtn{
+    border:0px;
+    border-radius: 7px;
+    background:rgb(103, 14, 14);
+    color: white;
+  }
